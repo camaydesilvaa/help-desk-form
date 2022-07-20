@@ -5,7 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import QuestionMarkOutlined from '@mui/icons-material/QuestionMarkOutlined';
+import HelpIcon from '@mui/icons-material/Help';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -35,7 +35,7 @@ export default function Help() {
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <QuestionMarkOutlinedIcon />
+            <HelpIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
             Help Desk Form
@@ -75,6 +75,7 @@ export default function Help() {
               </Grid>
               <Grid item xs={12}>
                 <TextField
+                InputProps={{style:{height: 150}}}
                   required
                   fullWidth
                   name="description"
